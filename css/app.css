@@ -1,0 +1,68 @@
+/* regole base */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol,menu{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #999999;
+}
+  
+a:hover {
+    color: white;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+
+/* CONTAINER VIEWPORT */
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* NAV  */
+#main_nav{
+    width: 250px;
+    height: 100%;
+    background-color: black;
+}
+
+
+/* MAIN CONTENT - albums */
+/* contenitore della navbar e del main content */
+main{
+    display: flex;
+    flex-grow: 1;
+}
+
+#main_content{
+    flex-grow: 1;
+    background-color: #141922;
+}
+
+
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #282828;
+}
