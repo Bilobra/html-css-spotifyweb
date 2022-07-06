@@ -14,7 +14,7 @@ a {
     text-decoration: none;
     color: #999999;
 }
-  
+
 a:hover {
     color: white;
 }
@@ -23,6 +23,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     
 }
+
+main{
+    display: flex;
+    height: calc(100% - 90px);
+    /* flex-grow: 1; */
+}
+/*  con H in calc la mia nav bar prende lo spazio fino al footer */
+
 
 
 
@@ -40,15 +48,145 @@ body {
     width: 250px;
     height: 100%;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+/* LOGO */
+
+.nav_logo{
+    padding: 20px;
+    margin-bottom: 18px;
+}
+
+/* nascondo il logo piccolo x la versione desk */
+.nav_logo .logo_small{
+    display: none;
+}
+
+
+
+/* nav menu */
+
+.nav_menu img{
+    height: 30px;
+    margin-right: 10px;
+    opacity:0.5;
+}
+
+.nav_menu ul li {
+    padding: 5px 10px;
+
+}
+
+
+
+/* nav instal / profilo */
+
+.nav_install{
+    padding: 0 10px;
+}
+.nav_install .profilo{
+    padding: 10px 0;
+}
+
+.nav_install .install img{
+    height: 20px;
+    margin-right: 20px;
+    opacity: 0.5;
+}
+.nav_install .profilo img{
+    height: 30px;
+    margin-right: 20px;
+}
+
+
+/* nav NEW PLAYLIST */
+.nav_new_playlist h3 {
+    padding: 10px 0;
+    color: white;
+}
+.nav_new_playlist {
+    padding: 0 10px;
+}
+
+.nav_new_playlist a i {
+    font-size: 40px;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+
+/* nav_playlist */
+.nav_playlist{
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.nav_playlist ul li {
+    padding: 10px 0px;
+}
+
+/* @media Nav Mobile */
+@media screen and (max-width:600px){
+
+    #main_nav{
+        width: 50px;
+        padding: 10px;
+    }
+
+    .nav_logo{
+        padding:0;
+    }
+
+    .nav_logo .logo_big{
+        display: none;
+    }
+
+    .nav_logo .logo_small{
+        display: block;
+    }
+
+    /* far sparire le playlist le scritte e la new playlist */
+    #main_nav .nav_playlist {
+        display: none;
+    }
+
+
+    .hidden_text{
+        display: none;
+    }
+
+    .nav_new_playlist{
+        display: none;
+    }
+
+    /* riposizionare la nav_menu  */
+    #main_nav .nav_menu {
+        flex-grow: 1;
+    }
+
+    /* x centrare le icone nella nav */
+    .nav_menu ul li {
+        padding: 10px 0px;
+    }
+
+    .nav_install{
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
 
 
 /* MAIN CONTENT - albums */
 /* contenitore della navbar e del main content */
-main{
-    display: flex;
-    flex-grow: 1;
-}
 
 #main_content{
     flex-grow: 1;
