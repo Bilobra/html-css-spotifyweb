@@ -51,7 +51,7 @@ main{
 
 /* NAV  */
 #main_nav{
-    width: 250px;
+    min-width: 250px;
     height: 100%;
     background-color: black;
     display: flex;
@@ -168,7 +168,7 @@ main{
 @media screen and (max-width:600px){
 
     #main_nav{
-        width: 50px;
+        min-width: 50px;
         padding: 10px;
     }
 
@@ -385,12 +385,42 @@ main{
 }
 .played_content:hover .play_hover {
     display: block;
+    cursor: pointer;
 }
 
 /* pensare a dove mettere l'hover quando si vuole far apparire l'icon
 in questo caso l'hover va messo al container e non direttamente all'icon !!!! */
 
 
+/* MEDIA QUERY X GLI ALBUMS */
+
+@media screen and (max-width: 343px) {
+    .played_content {
+      flex-basis: calc(100% - 20px);
+      margin: 0 10px;
+    }
+}
+@media screen and (max-width: 840px) {
+    .played_content {
+      flex-basis: calc(100% / 2 - 20px);
+      margin: 0 10px;
+    }
+}
+@media screen and (min-width:841px) and (max-width: 1200px) {
+    .played_content {
+      flex-basis: calc(100% / 4 - 20px);
+      margin: 0 10px;
+    }
+}
+
+
+/* FORSE HO CAPITOOOOOO!!! */
+/* es : da massio 343px a massimo 840px flex basis sarà 2 perchè nel max 840px c'è / 2 */
+  
+  
+  
+
+  
 
 
 
