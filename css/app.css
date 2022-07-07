@@ -394,22 +394,43 @@ in questo caso l'hover va messo al container e non direttamente all'icon !!!! */
 
 /* MEDIA QUERY X GLI ALBUMS */
 
-@media screen and (max-width: 343px) {
+@media screen  and (max-width: 400px) {
     .played_content {
       flex-basis: calc(100% - 20px);
       margin: 0 10px;
+      
     }
+    .played_list{
+        flex-direction:column;
+        gap: 20px;
+      
+    }
+
+   #main_content{
+    overflow: auto;
+
+   }
+   
 }
+
 @media screen and (max-width: 840px) {
     .played_content {
       flex-basis: calc(100% / 2 - 20px);
       margin: 0 10px;
+
+    }
+    .card_text h3 {
+        font-size: 15px;
     }
 }
+
 @media screen and (min-width:841px) and (max-width: 1200px) {
     .played_content {
       flex-basis: calc(100% / 4 - 20px);
       margin: 0 10px;
+    }
+    .card_text h3 {
+        font-size: 15px;
     }
 }
 
