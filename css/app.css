@@ -240,6 +240,61 @@ main{
     background-color: #141922;
 }
 
+/* barra upgrade - main */
+
+.main_upgrade{
+    height: 90px;
+    width: calc(100% - 250px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: right;
+}
+.main_upgrade a{
+    color: white;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.main_upgrade .upgrade_button{
+    border: 1px solid #ffffffad;
+    border-radius: 35px;
+    line-height: 42px;
+    padding: 0px 43px;
+}
+
+.main_upgrade .upgrade_button:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:600px){
+    .main_upgrade{
+        width: calc(100% - 50px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* FOOTER */
